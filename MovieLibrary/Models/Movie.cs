@@ -1,3 +1,5 @@
+using System;
+using System.Globalization;
 using System.Text.Json.Serialization;
 
 namespace MovieLibrary.Models
@@ -13,7 +15,7 @@ namespace MovieLibrary.Models
         }
         public double GetRating()
         {
-            return double.Parse(ImdbRating);
+            return double.Parse(ImdbRating, new NumberFormatInfo{NumberDecimalSeparator = ","});
         }
     }
 }

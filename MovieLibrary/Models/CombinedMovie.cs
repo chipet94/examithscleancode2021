@@ -11,7 +11,7 @@ namespace MovieLibrary.Models
         {
             Id = detailedMovie.Id;
             ImdbId = movie.ImdbId;
-            OriginalTitle = movie.Title;
+            Title = movie.Title;
             AvrageRating = movie.ImdbRating;
             Year = detailedMovie.Year;
             Genres = detailedMovie.Genres;
@@ -36,7 +36,6 @@ namespace MovieLibrary.Models
         public string Duration { get; set; }
         public DateTime ReleaseDate { get; set; }
         public string AvrageRating { get; set; }
-        public string OriginalTitle { get; set; }
         public string Storyline { get; set; }
         public IEnumerable<string> Actors { get; set; }
         public double ImdbRating { get; set; }

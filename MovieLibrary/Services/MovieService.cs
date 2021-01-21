@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -29,12 +30,9 @@ namespace MovieLibrary.Services
             
             movieList.AddRange(simpleList);
             movieList.AddRange(detailedList);
-            foreach (var movie in combinedList)
+            foreach (var combinedMovie in combinedList)
             {
-                foreach (var existingMovie in movieList.Where(existingMovie => existingMovie.Title == movie.Title))
-                {
-                    movieList.Remove(existingMovie);
-                }
+                movieList.RemoveAll(m => m.Title == combinedMovie.Title);
             }
             movieList.AddRange(combinedList);
             return ascending
