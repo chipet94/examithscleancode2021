@@ -1,4 +1,20 @@
 # Tentamen i Clean code och testbar kod
+(fick inte med readme i commit.)
+fick slut på tid. 
+
+Jag har ändrat namn på projektet då det krockade med modellen Movie.
+jag har ändrat så kontrollen är lättare att läsa genom att skapa ett service layer. 
+tanken var att jobba med DTOs men fick strax innan 12 reda på att man skulle ha kvar samma funktioner och fick panikt skriva om. 
+
+har kombinerat listorna genom en interface som har ViewMe för att snabbt få fram modellen. (SLUT PÅ TID)
+
+
+
+
+
+
+
+
 
 - Datum: 2021-01-21
 - Program: C#-utvecklare
